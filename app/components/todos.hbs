@@ -1,0 +1,10 @@
+<div>
+  <AddTodo @add={{this.akita.add}} />
+  {{#each this.todos as |todo|}}
+    <Todo
+      @todo={{todo}}
+      @onToggle={{fn this.akita.complete todo.id}}
+    />
+  {{/each}}
+  <Filters @onChange={{this.changeFilter}} @active={{this.filter}} />
+</div>

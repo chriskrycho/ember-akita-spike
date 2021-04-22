@@ -1,0 +1,11 @@
+<div>
+  <label>
+    Done:
+    <input
+      type="checkbox"
+      checked={{@todo.completed}}
+      {{on 'change' @onToggle}}
+    />
+  </label>
+  <p>{{@todo.text}}</p>
+</div>

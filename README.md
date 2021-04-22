@@ -1,7 +1,6 @@
 # ember-akita
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+A ***quickly hacked-together spike*** of what integrating [Akita](https://datorama.github.io/akita/) into an [Ember Octane](https://emberjs.com) app looks like.
 
 ## Prerequisites
 

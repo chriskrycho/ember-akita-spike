@@ -1,0 +1,8 @@
+<div>
+  <span>Show: </span>
+  <select {{on "change" @onChange}} value={{@active}}>
+    <option value="SHOW_ALL">All</option>
+    <option value="SHOW_ACTIVE">Active</option>
+    <option value="SHOW_COMPLETED">Completed</option>
+  </select>
+</div>
