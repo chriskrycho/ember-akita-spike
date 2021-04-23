@@ -1,6 +1,12 @@
 # ember-akita
 
-A ***quickly hacked-together spike*** of what integrating [Akita](https://datorama.github.io/akita/) into an [Ember Octane](https://emberjs.com) app looks like.
+A ***quickly hacked-together spike*** of what integrating [Akita](https://datorama.github.io/akita/) into an [Ember Octane](https://emberjs.com) app looks like. This is basically "TODO MVC" but with no styles (and only about 95% of the functionality implemented).
+
+The files of interest are:
+
+- [the `AkitaService`](./app/services/akita.ts), which also defines all the actual boilerplate for the `Todo` type, the Akita store and queries, etc.
+
+- [the `todos.ts` component](./app/components/todos.ts), which connects the store to local reactive (tracked) state in the Ember app. This is comparable to setting up the state (with `setState` or a custom hook) in a React app.
 
 ## Prerequisites
 
@@ -23,35 +29,3 @@ You will need the following things properly installed on your computer.
 * `ember serve`
 * Visit your app at [http://localhost:4200](http://localhost:4200).
 * Visit your tests at [http://localhost:4200/tests](http://localhost:4200/tests).
-
-### Code Generators
-
-Make use of the many generators for code, try `ember help generate` for more details
-
-### Running Tests
-
-* `ember test`
-* `ember test --server`
-
-### Linting
-
-* `yarn lint:hbs`
-* `yarn lint:js`
-* `yarn lint:js --fix`
-
-### Building
-
-* `ember build` (development)
-* `ember build --environment production` (production)
-
-### Deploying
-
-Specify what it takes to deploy your app.
-
-## Further Reading / Useful Links
-
-* [ember.js](https://emberjs.com/)
-* [ember-cli](https://ember-cli.com/)
-* Development Browser Extensions
-  * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
-  * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
