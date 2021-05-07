@@ -8,6 +8,8 @@ The files of interest are:
 
 - [the `todos.ts` component](./app/components/todos.ts), which connects the store to local reactive (tracked) state in the Ember app. This is comparable to setting up the state (with `setState` or a custom hook) in a React app.
 
+The most notable thing about this: at the end of the day, there are two separate state management and reactivity systems in play, and bridging between them means duplicating the state and keeping it in sync. This is true of *any* time you have multiple state management and reactivity systems in play: RxJS has exactly the same bridging overhead when working with Svelte or Vue or React or Ember. (Because Angular bakes it in, it gets it free-*er*, but there is still some cost there as well.)
+
 ## Prerequisites
 
 You will need the following things properly installed on your computer.
